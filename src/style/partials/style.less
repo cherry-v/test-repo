@@ -1,79 +1,72 @@
-@charset "UTF-8";
-.reset();
-
-@import "elements";
-@import "resets";
-@import "font";
-@import "form";
-@import "common";
-@import "typography";
+@charset 'UTF-8';
+@import 'elements';
+@import 'resets';
+@import 'font';
+@import 'form';
+@import 'common';
+@import 'typography';
 
 a {
-	color: @link-color;
-	text-decoration: underline;
-	-webkit-transition: color 0.3s linear;
-	-moz-transition: color 0.3s linear;
-	transition: color 0.3s linear;
-	&:hover {
-		color: @link-color-hover;
-	}
+  -webkit-transition: color .3s linear;
+     -moz-transition: color .3s linear;
+          transition: color .3s linear;
+  text-decoration: underline;
+  color: @link-color;
+
+  &:hover {
+    color: @link-color-hover;
+  }
 }
+
 html {
-    position: relative;
+  position: relative;
 }
-body, html { 
-    min-height: 100%; 
+
+body, html {
+  min-height: 100%;
 }
-body{
-    font-family: @font-family;
-    font-size: @font-size-base;
-    color: @text-color; 
-    min-width: @container-sm;
-    background: @body-bg;
-    -webkit-text-size-adjust:none;
-    text-size-adjust: none;
-    -webkit-font-smoothing: antialiased;
+
+body {
+  font-family: @font-family;
+  font-size: @font-size-base;
+  min-width: @container-sm;
+  color: @text-color;
+  background: @body-bg;
+  -webkit-text-size-adjust: none;
+          text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
 }
+
 .wrap-page {
-	position: relative;
-	min-width: @container-sm;
-	min-height: 100%;
-	background-color: @body-bg;
+  position: relative;
+  min-width: @container-sm;
+  min-height: 100%;
+  background-color: @body-bg;
 }
+
 .wrap {
-	position: relative;
-	min-width: @container-sm;
-	max-width: @container-lg;
-	padding: 0 10px;
-	margin: 0 auto;
-	.clear();
+  position: relative;
+  min-width: @container-sm;
+  max-width: @container-lg;
+  margin: 0 auto;
+  padding: 0 10px;
 }
+
 .site-header {
-	width: 100%;
-	background-color: @bg-color-1;
-	.logo {
-	    a {
-	    	
-	    	img {
-	    		
-	    	}
-	    }
-	}
+  width: 100%;
+  background-color: @bg-color-1;
 }
+
 /**footer**/
+
 .hfooter {
-    height: 140px;
-    clear: both;
+  clear: both;
+  height: 140px;
 }
+
 .footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    .wrap {
-	    
-	}
-}
-@media screen and (max-width: 960px) {
-	
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }

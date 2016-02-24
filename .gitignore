@@ -2,3 +2,5 @@
 *.css.map
 node_modules
 .csscomb.json
+build/css/*.css
+build/js/main.js
